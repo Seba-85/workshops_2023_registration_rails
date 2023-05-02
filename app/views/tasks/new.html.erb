@@ -3,7 +3,7 @@
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-lg-9 col-xl-7">
         <div class="card rounded-3">
-          <div class="card-body p-4">
+          < class="card-body p-4">
 
             <%= content_tag :div, class: "alert alert-info", id: "notice" do -%>
               <%= notice %>
@@ -34,6 +34,13 @@
                 <label class="form-label">
                   <span>Description</span>
                   <%= f.text_area :description, class: "form-control" %>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">
+                  <span>Deadline</span>
+                  <%= f.datetime_select :deadline, class: "form-control" %>
                 </label>
               </div>
 
